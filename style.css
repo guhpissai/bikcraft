@@ -111,7 +111,9 @@ img {
  grid-template-columns: 1fr 1fr;
  max-width: 1200px;
  margin: 0 auto;
+ box-sizing: border-box;
  gap: 0 40px;
+ padding: 0 20px;
 }
 
 .introducao-conteudo {
@@ -130,4 +132,24 @@ img {
  font-size: 24px;
  line-height: 1.5;
  color: #b2b2b2;
+}
+
+.introducao-conteudo span {
+ color: #FB0;
+}
+
+.introducao-conteudo a {
+ display: inline-block;
+ padding: 16px 32px;
+ background: linear-gradient(#FFC800, #F2A60D);
+ border-radius: 4px;
+ box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+ color: #332200;
+ font-size: 18px;
+ line-height: 1.33;
+ font-weight: bold;
+}
+
+.introducao-conteudo a:hover {
+ background: linear-gradient(#ffb60d, #e59317);
 }
