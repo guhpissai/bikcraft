@@ -15,3 +15,6 @@
 
 /*Tecnologia */
 @import "./tecnologia/tecnologia.css";
+
+/*Parceiros */
+@import "./home/parceiros.css";
