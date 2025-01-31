@@ -1,0 +1,23 @@
+.termo {
+  margin-bottom: 48px;
+}
+
+.termo li {
+  margin-bottom: 24px;
+}
+
+.termos h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.termos h2::before {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 10px;
+  background: var(--cor-p2);
+  margin-right: 12px;
+}
