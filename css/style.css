@@ -42,3 +42,6 @@
 
 /*Bicicleta*/
 @import "./bicicleta/bicicleta.css";
+
+/*Seguro*/
+@import "./bicicleta/seguro.css";
