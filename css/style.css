@@ -6,6 +6,7 @@
 /* Utilidades */
 @import "./utilidades/componentes.css";
 @import "./utilidades/cores.css";
+@import "./utilidades/formulario.css";
 
 /* Home */
 @import "./home/introducao.css";
@@ -45,3 +46,6 @@
 
 /*Seguro*/
 @import "./bicicleta/seguro.css";
+
+/*Contato*/
+@import "./contato/contato.css";
