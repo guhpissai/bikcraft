@@ -35,10 +35,9 @@
   position: absolute;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
-  height: 2px;
-  background-color: var(--cor-0);
 }
 
 @media (max-width: 800px) {
