@@ -15,7 +15,7 @@ links.forEach(ativarLink)
 
 function ativarProduto(produto) {
  const element = document.getElementById(produto)
- if(element) element.checked = 'true'
+ if(element) element.checked = true
 }
 
 const parametros = new URLSearchParams(location.search)
@@ -36,8 +36,31 @@ function ativarPergunta(event) {
 
 function eventoPerguntas(pergunta) {
  pergunta.addEventListener('click', ativarPergunta)
- const resposta = document.querySelectorAll('.perguntas dd')
 }
 
  const pergunta = document.querySelectorAll('.perguntas button')
 pergunta.forEach(eventoPerguntas)
+
+
+// Bicicletas Imagens
+
+const galeria = document.querySelector('.bicicleta-img')
+const bicicletas = document.querySelectorAll('.bicicleta-img img')
+
+function trocarImagem(event) {
+ imagem = event.currentTarget
+ const media = matchMedia('(min-width: 1000px)').matches
+ if(media) galeria.prepend(imagem)
+}
+
+bicicletas.forEach((bicicleta) => {
+ bicicleta.addEventListener('click', trocarImagem)
+})
+
+
+// Animação
+
+
+if(window.SimpleAnime) {
+ new SimpleAnime();
+}
